@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9798598B1CF45DE7009CB223 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798598A1CF45DE7009CB223 /* main.m */; };
+		9798598E1CF45DE7009CB223 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798598D1CF45DE7009CB223 /* AppDelegate.m */; };
+		979859941CF45DE7009CB223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979859921CF45DE7009CB223 /* Main.storyboard */; };
+		979859961CF45DE7009CB223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979859951CF45DE7009CB223 /* Assets.xcassets */; };
+		979859A71CF45E01009CB223 /* WCLRecordEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 979859A31CF45E01009CB223 /* WCLRecordEncoder.m */; };
+		979859A81CF45E01009CB223 /* WCLRecordEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 979859A61CF45E01009CB223 /* WCLRecordEngine.m */; };
+		979859AC1CF46950009CB223 /* WCLRecordProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 979859AB1CF46950009CB223 /* WCLRecordProgressView.m */; };
+		979859AF1CF469F2009CB223 /* WCLRecordVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 979859AE1CF469F2009CB223 /* WCLRecordVideoVC.m */; };
+		979859B11CF46B2F009CB223 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979859B01CF46B2F009CB223 /* MobileCoreServices.framework */; };
+		979859B31CF46BF9009CB223 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979859B21CF46BF9009CB223 /* Launch Screen.storyboard */; };
+		A1B7109C1E7106980021A9BE /* MoviePlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B7109B1E7106980021A9BE /* MoviePlayController.m */; };
+		A1B710BA1E713DC20021A9BE /* KrVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B710B81E713DC20021A9BE /* KrVideoPlayerController.m */; };
+		A1B710BB1E713DC20021A9BE /* KrVideoPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B710B91E713DC20021A9BE /* KrVideoPlayerControlView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		979859861CF45DE7009CB223 /* WCLRecordVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCLRecordVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9798598A1CF45DE7009CB223 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9798598C1CF45DE7009CB223 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9798598D1CF45DE7009CB223 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		979859931CF45DE7009CB223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		979859951CF45DE7009CB223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9798599A1CF45DE7009CB223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979859A21CF45E01009CB223 /* WCLRecordEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLRecordEncoder.h; sourceTree = "<group>"; };
+		979859A31CF45E01009CB223 /* WCLRecordEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLRecordEncoder.m; sourceTree = "<group>"; };
+		979859A51CF45E01009CB223 /* WCLRecordEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLRecordEngine.h; sourceTree = "<group>"; };
+		979859A61CF45E01009CB223 /* WCLRecordEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLRecordEngine.m; sourceTree = "<group>"; };
+		979859AA1CF46950009CB223 /* WCLRecordProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLRecordProgressView.h; sourceTree = "<group>"; };
+		979859AB1CF46950009CB223 /* WCLRecordProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLRecordProgressView.m; sourceTree = "<group>"; };
+		979859AD1CF469F2009CB223 /* WCLRecordVideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLRecordVideoVC.h; sourceTree = "<group>"; };
+		979859AE1CF469F2009CB223 /* WCLRecordVideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLRecordVideoVC.m; sourceTree = "<group>"; };
+		979859B01CF46B2F009CB223 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		979859B21CF46BF9009CB223 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A11CC8FA1E78D9D700672B3D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A1B7109A1E7106980021A9BE /* MoviePlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayController.h; sourceTree = "<group>"; };
+		A1B7109B1E7106980021A9BE /* MoviePlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayController.m; sourceTree = "<group>"; };
+		A1B710B61E713DBA0021A9BE /* KrVideoPlayerControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KrVideoPlayerControlView.h; sourceTree = "<group>"; };
+		A1B710B71E713DC20021A9BE /* KrVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KrVideoPlayerController.h; sourceTree = "<group>"; };
+		A1B710B81E713DC20021A9BE /* KrVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KrVideoPlayerController.m; sourceTree = "<group>"; };
+		A1B710B91E713DC20021A9BE /* KrVideoPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KrVideoPlayerControlView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		979859831CF45DE7009CB223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979859B11CF46B2F009CB223 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9798597D1CF45DE7009CB223 = {
+			isa = PBXGroup;
+			children = (
+				979859B01CF46B2F009CB223 /* MobileCoreServices.framework */,
+				979859881CF45DE7009CB223 /* WCLRecordVideo */,
+				979859871CF45DE7009CB223 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		979859871CF45DE7009CB223 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				979859861CF45DE7009CB223 /* WCLRecordVideo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		979859881CF45DE7009CB223 /* WCLRecordVideo */ = {
+			isa = PBXGroup;
+			children = (
+				A1E073C11E7A6C94002A55CC /* VideoPlayer */,
+				979859A91CF46950009CB223 /* WCLRecordProgressView */,
+				979859A01CF45E01009CB223 /* WCLRecordVideo */,
+				9798598C1CF45DE7009CB223 /* AppDelegate.h */,
+				9798598D1CF45DE7009CB223 /* AppDelegate.m */,
+				979859AD1CF469F2009CB223 /* WCLRecordVideoVC.h */,
+				979859AE1CF469F2009CB223 /* WCLRecordVideoVC.m */,
+				A1B7109A1E7106980021A9BE /* MoviePlayController.h */,
+				A1B7109B1E7106980021A9BE /* MoviePlayController.m */,
+				979859921CF45DE7009CB223 /* Main.storyboard */,
+				A11CC8FA1E78D9D700672B3D /* PrefixHeader.pch */,
+				979859951CF45DE7009CB223 /* Assets.xcassets */,
+				9798599A1CF45DE7009CB223 /* Info.plist */,
+				979859891CF45DE7009CB223 /* Supporting Files */,
+				979859B21CF46BF9009CB223 /* Launch Screen.storyboard */,
+			);
+			path = WCLRecordVideo;
+			sourceTree = "<group>";
+		};
+		979859891CF45DE7009CB223 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9798598A1CF45DE7009CB223 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		979859A01CF45E01009CB223 /* WCLRecordVideo */ = {
+			isa = PBXGroup;
+			children = (
+				979859A11CF45E01009CB223 /* VideoWriter */,
+				979859A41CF45E01009CB223 /* VideoRecorder */,
+			);
+			path = WCLRecordVideo;
+			sourceTree = "<group>";
+		};
+		979859A11CF45E01009CB223 /* VideoWriter */ = {
+			isa = PBXGroup;
+			children = (
+				979859A21CF45E01009CB223 /* WCLRecordEncoder.h */,
+				979859A31CF45E01009CB223 /* WCLRecordEncoder.m */,
+			);
+			name = VideoWriter;
+			path = WCLRecordEncoder;
+			sourceTree = "<group>";
+		};
+		979859A41CF45E01009CB223 /* VideoRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				979859A51CF45E01009CB223 /* WCLRecordEngine.h */,
+				979859A61CF45E01009CB223 /* WCLRecordEngine.m */,
+			);
+			name = VideoRecorder;
+			path = WCLRecordEngine;
+			sourceTree = "<group>";
+		};
+		979859A91CF46950009CB223 /* WCLRecordProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				979859AA1CF46950009CB223 /* WCLRecordProgressView.h */,
+				979859AB1CF46950009CB223 /* WCLRecordProgressView.m */,
+			);
+			path = WCLRecordProgressView;
+			sourceTree = "<group>";
+		};
+		A1E073C11E7A6C94002A55CC /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A1B710B71E713DC20021A9BE /* KrVideoPlayerController.h */,
+				A1B710B81E713DC20021A9BE /* KrVideoPlayerController.m */,
+				A1B710B61E713DBA0021A9BE /* KrVideoPlayerControlView.h */,
+				A1B710B91E713DC20021A9BE /* KrVideoPlayerControlView.m */,
+			);
+			name = VideoPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		979859851CF45DE7009CB223 /* WCLRecordVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9798599D1CF45DE7009CB223 /* Build configuration list for PBXNativeTarget "WCLRecordVideo" */;
+			buildPhases = (
+				979859821CF45DE7009CB223 /* Sources */,
+				979859831CF45DE7009CB223 /* Frameworks */,
+				979859841CF45DE7009CB223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WCLRecordVideo;
+			productName = WCLRecordVideo;
+			productReference = 979859861CF45DE7009CB223 /* WCLRecordVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9798597E1CF45DE7009CB223 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "王崇磊";
+				TargetAttributes = {
+					979859851CF45DE7009CB223 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4G6QV9EUCZ;
+					};
+				};
+			};
+			buildConfigurationList = 979859811CF45DE7009CB223 /* Build configuration list for PBXProject "WCLRecordVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9798597D1CF45DE7009CB223;
+			productRefGroup = 979859871CF45DE7009CB223 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				979859851CF45DE7009CB223 /* WCLRecordVideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		979859841CF45DE7009CB223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979859B31CF46BF9009CB223 /* Launch Screen.storyboard in Resources */,
+				979859961CF45DE7009CB223 /* Assets.xcassets in Resources */,
+				979859941CF45DE7009CB223 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		979859821CF45DE7009CB223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979859AC1CF46950009CB223 /* WCLRecordProgressView.m in Sources */,
+				A1B710BA1E713DC20021A9BE /* KrVideoPlayerController.m in Sources */,
+				9798598E1CF45DE7009CB223 /* AppDelegate.m in Sources */,
+				979859A81CF45E01009CB223 /* WCLRecordEngine.m in Sources */,
+				979859A71CF45E01009CB223 /* WCLRecordEncoder.m in Sources */,
+				A1B7109C1E7106980021A9BE /* MoviePlayController.m in Sources */,
+				979859AF1CF469F2009CB223 /* WCLRecordVideoVC.m in Sources */,
+				A1B710BB1E713DC20021A9BE /* KrVideoPlayerControlView.m in Sources */,
+				9798598B1CF45DE7009CB223 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		979859921CF45DE7009CB223 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				979859931CF45DE7009CB223 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9798599B1CF45DE7009CB223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9798599C1CF45DE7009CB223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9798599E1CF45DE7009CB223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4G6QV9EUCZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WCLRecordVideo/PrefixHeader.pch";
+				INFOPLIST_FILE = WCLRecordVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IMWCL.WCLRecordVideo.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		9798599F1CF45DE7009CB223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4G6QV9EUCZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WCLRecordVideo/PrefixHeader.pch";
+				INFOPLIST_FILE = WCLRecordVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IMWCL.WCLRecordVideo.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		979859811CF45DE7009CB223 /* Build configuration list for PBXProject "WCLRecordVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9798599B1CF45DE7009CB223 /* Debug */,
+				9798599C1CF45DE7009CB223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9798599D1CF45DE7009CB223 /* Build configuration list for PBXNativeTarget "WCLRecordVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9798599E1CF45DE7009CB223 /* Debug */,
+				9798599F1CF45DE7009CB223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9798597E1CF45DE7009CB223 /* Project object */;
+}
