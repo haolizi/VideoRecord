@@ -188,7 +188,6 @@
 				TargetAttributes = {
 					979859851CF45DE7009CB223 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 4G6QV9EUCZ;
 					};
 				};
 			};
@@ -348,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4G6QV9EUCZ;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WCLRecordVideo/PrefixHeader.pch";
 				INFOPLIST_FILE = WCLRecordVideo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -365,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4G6QV9EUCZ;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WCLRecordVideo/PrefixHeader.pch";
 				INFOPLIST_FILE = WCLRecordVideo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

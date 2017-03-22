@@ -7,8 +7,8 @@
 首先我要声明的是：这个demo是修改自[WCLRecordVideo](https://github.com/631106979/WCLRecordVideo)，仅用来大家互相学习，如果侵犯了原作者利益，请及时指出
 <br>欢迎下载、欢迎指导、欢迎star。</br>
 
-![image](https://github.com/haolizi/VideoRecord/blob/master/etc.gif)
-
+![image](https://github.com/haolizi/VideoRecord/blob/master/pause.PNG)
+![image](https://github.com/haolizi/VideoRecord/blob/master/star.PNG)
 
 
 
