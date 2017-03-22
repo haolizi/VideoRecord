@@ -23,7 +23,11 @@ typedef NS_ENUM(NSUInteger,RecordOrientation){
 
 @protocol WCLRecordEngineDelegate <NSObject>
 
-- (void)recordProgress:(CGFloat)progress;
+/*
+ * progress   :进度条进度
+ * currentTime:当前录制时间
+ */
+- (void)recordProgress:(CGFloat)progress currentRecordTime:(CGFloat)currentTime;
 
 @end
 

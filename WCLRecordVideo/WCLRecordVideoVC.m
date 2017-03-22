@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *recordNextBT;
 @property (weak, nonatomic) IBOutlet UIButton *recordBt;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewTop;
+@property (weak, nonatomic) IBOutlet UILabel *maxTimeLB;
+@property (weak, nonatomic) IBOutlet UILabel *currentTimeLB;
 @property (weak, nonatomic) IBOutlet WCLRecordProgressView *progressView;
 @property (strong, nonatomic) WCLRecordEngine *recordEngine;
 @property (assign, nonatomic) BOOL            allowRecord;//允许录制
@@ -60,6 +62,11 @@
     self.allowRecord = YES;
     [self addFocusView];//添加手动聚焦View
     [self addGenstureRecognizer];//添加点按手势
+    
+    if (0 == self.maxRecordTime) {
+        self.maxRecordTime = 5*60;//默认最大录制时间为5分钟
+    }
+    self.maxTimeLB.text = [NSString stringWithFormat:@"/ %@", [self timeFormatted:self.maxRecordTime]];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -131,7 +138,7 @@
 - (WCLRecordEngine *)recordEngine {
     if (_recordEngine == nil) {
         _recordEngine = [[WCLRecordEngine alloc] init];
-        _recordEngine.maxRecordTime = 20;//最大录制时间
+        _recordEngine.maxRecordTime = self.maxRecordTime;//最大录制时间
         _recordEngine.delegate = self;
         _recordEngine.previewLayer.frame = self.view.bounds;
         [self.view.layer insertSublayer:_recordEngine.previewLayer atIndex:0];
@@ -140,12 +147,21 @@
 }
 
 #pragma mark - WCLRecordEngineDelegate
-- (void)recordProgress:(CGFloat)progress {
+- (void)recordProgress:(CGFloat)progress currentRecordTime:(CGFloat)currentTime {
     if (progress >= 1) {
         [self recordAction:self.recordBt];
         self.allowRecord = NO;
     }
     self.progressView.progress = progress;
+    self.currentTimeLB.text = [self timeFormatted:currentTime];
+}
+
+- (NSString *)timeFormatted:(float)totalSeconds
+{
+    int secondInt = (int)totalSeconds;
+    int seconds = secondInt % 60;
+    int minutes = (secondInt / 60) % 60;
+    return [NSString stringWithFormat:@"%02d:%02d", minutes, seconds];
 }
 
 #pragma mark - 各种点击事件

@@ -142,9 +142,9 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
                     self.recordEncoder = nil;
                     self.startTime = CMTimeMake(0, 0);
                     self.currentRecordTime = 0;
-                    if ([self.delegate respondsToSelector:@selector(recordProgress:)]) {
+                    if ([self.delegate respondsToSelector:@selector(recordProgress:currentRecordTime:)]) {
                         dispatch_async(dispatch_get_main_queue(), ^{
-                            [self.delegate recordProgress:self.currentRecordTime/self.maxRecordTime];
+                            [self.delegate recordProgress:self.currentRecordTime/self.maxRecordTime currentRecordTime:self.currentRecordTime];
                         });
                     }
                     [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
@@ -578,17 +578,17 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     self.currentRecordTime = CMTimeGetSeconds(sub);
     if (self.currentRecordTime > self.maxRecordTime) {
         if (self.currentRecordTime - self.maxRecordTime < 0.1) {
-            if ([self.delegate respondsToSelector:@selector(recordProgress:)]) {
+            if ([self.delegate respondsToSelector:@selector(recordProgress:currentRecordTime:)]) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.delegate recordProgress:self.currentRecordTime/self.maxRecordTime];
+                    [self.delegate recordProgress:self.currentRecordTime/self.maxRecordTime currentRecordTime:self.currentRecordTime];
                 });
             }
         }
         return;
     }
-    if ([self.delegate respondsToSelector:@selector(recordProgress:)]) {
+    if ([self.delegate respondsToSelector:@selector(recordProgress:currentRecordTime:)]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.delegate recordProgress:self.currentRecordTime/self.maxRecordTime];
+            [self.delegate recordProgress:self.currentRecordTime/self.maxRecordTime currentRecordTime:self.currentRecordTime];
         });
     }
     // 进行数据编码

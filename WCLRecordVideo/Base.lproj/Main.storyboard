@@ -54,6 +54,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls9-yu-Igy">
+                                <rect key="frame" x="310" y="525" width="56" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="Lkl-kZ-NFA"/>
+                                    <constraint firstAttribute="height" constant="21" id="ygY-e2-RgX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpY-1n-zij">
+                                <rect key="frame" x="250" y="525" width="55" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QXN-ZH-Bfh"/>
+                                    <constraint firstAttribute="width" constant="55" id="URc-OG-8U0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71Q-zW-7zv">
                                 <rect key="frame" x="0.0" y="521" width="375" height="146"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -136,10 +156,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ls9-yu-Igy" secondAttribute="trailing" constant="9" id="2dR-Te-mUT"/>
                             <constraint firstItem="vo4-ji-WVI" firstAttribute="trailing" secondItem="brw-Yk-TW9" secondAttribute="trailing" id="3FJ-fr-uGm"/>
                             <constraint firstItem="lig-nq-STY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3FS-CW-0pV"/>
                             <constraint firstItem="irG-u6-cm9" firstAttribute="centerX" secondItem="brw-Yk-TW9" secondAttribute="centerX" constant="39.5" id="4Fk-nc-MVU"/>
                             <constraint firstItem="brw-Yk-TW9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Nq-lQ-HAn"/>
+                            <constraint firstItem="RpY-1n-zij" firstAttribute="top" secondItem="lig-nq-STY" secondAttribute="bottom" constant="4" id="D2Z-K7-0Sj"/>
+                            <constraint firstItem="ls9-yu-Igy" firstAttribute="leading" secondItem="RpY-1n-zij" secondAttribute="trailing" constant="5" id="Gbe-ba-Twh"/>
                             <constraint firstItem="irG-u6-cm9" firstAttribute="centerY" secondItem="brw-Yk-TW9" secondAttribute="centerY" constant="7" id="KxU-hO-QT9"/>
                             <constraint firstItem="zt8-Lg-NcA" firstAttribute="centerY" secondItem="71Q-zW-7zv" secondAttribute="centerY" id="PZG-V9-uUR"/>
                             <constraint firstItem="zt8-Lg-NcA" firstAttribute="centerX" secondItem="71Q-zW-7zv" secondAttribute="centerX" id="Pzi-zU-uli"/>
@@ -156,13 +179,16 @@
                             <constraint firstItem="71Q-zW-7zv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kUo-g2-BWn"/>
                             <constraint firstItem="71Q-zW-7zv" firstAttribute="top" secondItem="lig-nq-STY" secondAttribute="bottom" id="x1X-BC-wYF"/>
                             <constraint firstItem="r3m-ip-SQ9" firstAttribute="centerY" secondItem="brw-Yk-TW9" secondAttribute="centerY" constant="7" id="zPR-sW-Nfz"/>
+                            <constraint firstItem="ls9-yu-Igy" firstAttribute="top" secondItem="lig-nq-STY" secondAttribute="bottom" constant="4" id="zz6-2w-l29"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="msx-En-V6z"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="changeCameraBT" destination="r3m-ip-SQ9" id="GoW-S2-hhe"/>
+                        <outlet property="currentTimeLB" destination="RpY-1n-zij" id="XfM-xW-uhN"/>
                         <outlet property="flashLightBT" destination="irG-u6-cm9" id="iAX-Xt-Ekp"/>
+                        <outlet property="maxTimeLB" destination="ls9-yu-Igy" id="wiZ-3R-YGt"/>
                         <outlet property="progressView" destination="lig-nq-STY" id="rQx-ID-CuD"/>
                         <outlet property="recordBt" destination="zt8-Lg-NcA" id="EEr-9l-KJh"/>
                         <outlet property="recordNextBT" destination="vo4-ji-WVI" id="v2v-HL-Zgd"/>

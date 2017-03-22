@@ -10,5 +10,7 @@
 
 @interface WCLRecordVideoVC :UIViewController
 
+//最大录制时间，单位：秒
+@property (nonatomic, assign) NSInteger maxRecordTime;
 
 @end
