@@ -42,6 +42,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    //加速器可用
     if([self.motionManager isAccelerometerAvailable]){
         [self orientationChange];
     }
@@ -264,7 +265,9 @@
 - (CMMotionManager *)motionManager
 {
     if (_motionManager == nil) {
+        //创建运动管理对象
         _motionManager = [[CMMotionManager alloc] init];
+        //一秒钟采样15次
         _motionManager.accelerometerUpdateInterval = 1./15.;
     }
     return _motionManager;
@@ -273,6 +276,7 @@
 - (UIInterfaceOrientation)orientationChange
 {
     WEAKSELF(weakSelf);
+    //开始采样
     [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMAccelerometerData * _Nullable accelerometerData, NSError * _Nullable error) {
         CMAcceleration acceleration = accelerometerData.acceleration;
         UIInterfaceOrientation orientationNew;
