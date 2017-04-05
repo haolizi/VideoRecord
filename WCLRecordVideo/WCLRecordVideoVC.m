@@ -310,6 +310,35 @@
     return self.orientationLast;
 }
 
+//监听app进入后台 如果正在录制则停止 如果未开始录制则返回上一个界面
+- (void)enterBackgroundMode:(NSNotification *)noti
+{
+    //进入后台
+    if (self.recordEngine.isCapturing && !self.recordEngine.isPaused) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self recordAction:self.recordBt];
+        });
+    } else {
+        //非暂停状态返回 暂停状态不做任何操作
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self back];
+        });
+    }
+}
+
+- (void)back
+{
+    if (self.recordEngine.isCapturing) {
+        //正在录制 停止录制删除缓存
+        [self.recordEngine unloadInputOrOutputDevice];
+        //删除沙盒中视频
+        [self.recordEngine deleteVideoCache];
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

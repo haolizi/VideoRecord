@@ -60,11 +60,23 @@
 
 //初始化视频输入
 - (void)initVideoInputHeight:(NSInteger)cy width:(NSInteger)cx {
+    /**
+     调整视频写入时的压缩比率
+     
+     @param AVVideoAverageBitRateKey 视频尺寸*比率
+     @param AVVideoProfileLevelKey 画质设置
+     @param AVVideoMaxKeyFrameIntervalKey 关键帧最大间隔，数值越大压缩率越高
+     */
+    NSDictionary *compressConfig = @{AVVideoAverageBitRateKey:[NSNumber numberWithInteger:cx*cy*3.0],
+                                     AVVideoProfileLevelKey:AVVideoProfileLevelH264MainAutoLevel,
+                                     AVVideoMaxKeyFrameIntervalKey:[NSNumber numberWithInteger:10]};
+    
     //录制视频的一些配置，分辨率，编码方式等等
-    NSDictionary* settings = [NSDictionary dictionaryWithObjectsAndKeys:
+    NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
                               AVVideoCodecH264, AVVideoCodecKey,
                               [NSNumber numberWithInteger: cx], AVVideoWidthKey,
                               [NSNumber numberWithInteger: cy], AVVideoHeightKey,
+                              compressConfig,AVVideoCompressionPropertiesKey,
                               nil];
     //初始化视频写入类
     _videoInput = [AVAssetWriterInput assetWriterInputWithMediaType:AVMediaTypeVideo outputSettings:settings];

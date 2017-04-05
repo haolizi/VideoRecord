@@ -604,6 +604,37 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     return sout;
 }
 
+- (void)deleteVideoCache
+{
+    if ([[NSFileManager defaultManager] fileExistsAtPath:self.videoPath]) {
+        //删除
+        NSError *error = nil;
+        [[NSFileManager defaultManager] removeItemAtPath:self.videoPath error:&error];
+        if (error) {
+            NSLog(@"%@",error);
+            return;
+        }
+        NSLog(@"录制意外结束，删除本地文件");
+    }
+    NSAssert([[NSThread mainThread] isMainThread], @"Not Main Thread");
+}
+
+- (void)unloadInputOrOutputDevice
+{
+    //改变会话的配置前一定要先开启配置，配置完成后提交配置改变
+    [self.recordSession beginConfiguration];
+    
+    [self.recordSession removeInput:self.backCameraInput];
+    [self.recordSession removeInput:self.audioMicInput];
+    
+    [self.recordSession removeOutput:self.videoOutput];
+    [self.recordSession removeOutput:self.audioOutput];
+    
+    //提交会话配置
+    [self.recordSession commitConfiguration];
+}
+
+
 - (void)adjustRecorderOrientation:(AVCaptureVideoOrientation)orientation
 {
     self.videoConnection.videoOrientation = orientation;

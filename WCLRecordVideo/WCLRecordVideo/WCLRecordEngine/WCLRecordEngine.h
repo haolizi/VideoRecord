@@ -69,5 +69,7 @@ typedef NS_ENUM(NSUInteger,RecordOrientation){
 
 - (CGFloat)getFileSize:(NSString *)path;
 
+- (void)unloadInputOrOutputDevice;
 
+- (void)deleteVideoCache;
 @end
