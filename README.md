@@ -6,6 +6,7 @@
 首先我要声明的是：这个demo是修改自[WCLRecordVideo](https://github.com/631106979/WCLRecordVideo)，仅用来大家互相学习，如果侵犯了原作者利益，请及时指出。
 新加功能：1.app进入后台监测。如果正在录制则停止 如果未开始录制则返回上一个界面。
          2.码率处理。  如下： 
+```objective-C
      /**
      调整视频写入时的压缩比率，可根据需求自行调节 
      @param AVVideoAverageBitRateKey 视频尺寸*比率
@@ -23,7 +24,8 @@
                               [NSNumber numberWithInteger: cy], AVVideoHeightKey,
                               compressConfig,AVVideoCompressionPropertiesKey,
                               nil];
-如果不懂，请参考。。。                              
+```
+如有不懂，请参考。。。                              
 欢迎下载、欢迎指导、欢迎star。</br>
 使用过程中如果遇到什么问题，可发邮件给我。</br>
 持续添加功能中，敬请期待...</br>
