@@ -34,7 +34,7 @@ NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
                           nil];
 ```
 
-如有不懂，可以参考一下[AVFoundation基础知识<一>](http://www.jianshu.com/p/485e946f80b4)
+如有不懂，可以参考一下[AVFoundation基础知识<一>](http://www.jianshu.com/p/485e946f80b4)</br>
 欢迎下载、欢迎指导、欢迎star。</br>
 使用过程中如果遇到什么问题，可发邮件给我。</br>
 持续添加功能中，敬请期待...</br>
