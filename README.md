@@ -6,7 +6,7 @@
 首先我要声明的是：这个demo是修改自[WCLRecordVideo](https://github.com/631106979/WCLRecordVideo)，仅用来大家互相学习，如果侵犯了原作者利益，请及时指出。</br>
 
 新加功能：1.app进入后台监测。如果正在录制则进入暂停状态，如果未开始录制则返回上一个界面。</br>
-        2.视频删除，建议上传成功后删除沙盒中视频，调用[self.recordEngine deleteVideoCache];
+        2.视频删除，建议上传成功后删除沙盒中视频，调用[self.recordEngine deleteVideoCache];</br>
         3.码率处理。  如下： 
 ```objective-C
 /**
@@ -26,8 +26,9 @@ NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
                           [NSNumber numberWithInteger: cy], AVVideoHeightKey,
                           compressConfig,AVVideoCompressionPropertiesKey,
                           nil];
-```    
-请参考</br>
+```  
+
+如有不懂，可以参考一下[AVFoundation基础知识<一>](http://www.jianshu.com/p/485e946f80b4)
 欢迎下载、欢迎指导、欢迎star。</br>
 使用过程中如果遇到什么问题，可发邮件给我。</br>
 持续添加功能中，敬请期待...</br>
