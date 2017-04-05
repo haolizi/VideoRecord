@@ -64,8 +64,6 @@ typedef NS_ENUM(NSUInteger,RecordOrientation){
 - (void)setFocusCursorWithPoint:(CGPoint)tapPoint;
 //切换前后置摄像头
 - (void)changeCameraInputDeviceisFront:(BOOL)isFront;
-//将mov的视频转成mp4
-- (void)changeMovToMp4:(NSURL *)mediaURL dataBlock:(void (^)(UIImage *movieImage))handler;
 
 - (CGFloat)getVideoLength:(NSURL *)URL;
 

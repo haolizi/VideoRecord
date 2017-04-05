@@ -400,21 +400,6 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     [self.previewLayer addAnimation:changeAnimation forKey:@"changeAnimation"];
 }
 
-#pragma -mark 将mov文件转为MP4文件
-- (void)changeMovToMp4:(NSURL *)mediaURL dataBlock:(void (^)(UIImage *movieImage))handler {
-    AVAsset *video = [AVAsset assetWithURL:mediaURL];
-    AVAssetExportSession *exportSession = [AVAssetExportSession exportSessionWithAsset:video presetName:AVAssetExportPreset1280x720];
-    exportSession.shouldOptimizeForNetworkUse = YES;
-    exportSession.outputFileType = AVFileTypeMPEG4;
-    NSString * basePath = [self getVideoCachePath];
-
-    self.videoPath = [basePath stringByAppendingPathComponent:[self getUploadFile_type:@"video" fileType:@"mp4"]];
-    exportSession.outputURL = [NSURL fileURLWithPath:self.videoPath];
-    [exportSession exportAsynchronouslyWithCompletionHandler:^{
-        [self movieToImageHandler:handler];
-    }];
-}
-
 #pragma mark - 视频相关
 //返回前置摄像头
 - (AVCaptureDevice *)frontCamera {
