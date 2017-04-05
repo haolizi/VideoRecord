@@ -11,7 +11,7 @@
 
 新加功能：</br>
 1.app进入后台监测。如果正在录制则进入暂停状态，如果未开始录制则返回上一个界面。</br>
-2.视频删除，建议上传成功后删除沙盒中视频，调用[self.recordEngine deleteVideoCache];</br>
+2.视频删除，建议上传成功或视频出错等情况下删除沙盒中视频，调用[self.recordEngine deleteVideoCache];</br>
 3.码率处理。  如下： 
         
 ```objective-C
