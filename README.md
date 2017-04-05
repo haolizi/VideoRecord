@@ -5,7 +5,7 @@
 
 首先我要声明的是：这个demo是修改自[WCLRecordVideo](https://github.com/631106979/WCLRecordVideo)，仅用来大家互相学习，如果侵犯了原作者利益，请及时指出。</br>
 
-新加功能：1.app进入后台监测。如果正在录制则停止 如果未开始录制则返回上一个界面。</br>
+新加功能：1.app进入后台监测。如果正在录制则进入暂停状态，如果未开始录制则返回上一个界面。</br>
          2.码率处理。  如下： 
 ```objective-C
 /**
@@ -27,6 +27,7 @@ NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
                           nil];
                               
 请参考。。。
+
 ```                              
 欢迎下载、欢迎指导、欢迎star。</br>
 使用过程中如果遇到什么问题，可发邮件给我。</br>
