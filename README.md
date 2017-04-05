@@ -25,10 +25,8 @@ NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
                           [NSNumber numberWithInteger: cy], AVVideoHeightKey,
                           compressConfig,AVVideoCompressionPropertiesKey,
                           nil];
-                              
-请参考。。。
-
-```                              
+```    
+请参考</br>
 欢迎下载、欢迎指导、欢迎star。</br>
 使用过程中如果遇到什么问题，可发邮件给我。</br>
 持续添加功能中，敬请期待...</br>
