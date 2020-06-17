@@ -1,13 +1,12 @@
 # VideoRecoder
 
 用AVFoundation自定义视频录制功能，包含：
-* [x]横竖屏录制
-* [x]断点录制
-* [x]前后摄像头
-* [x]闪光灯
-* [x]手动聚焦
-* [x]还可设置最低和最高录制时间
-等.
+* [x] 横竖屏录制
+* [x] 断点录制
+* [x] 前后摄像头
+* [x] 闪光灯
+* [x] 手动聚焦
+* [x] 还可设置最低和最高录制时间
 
 ## 效果图
 ![image](https://github.com/haolizi/VideoRecord/blob/master/pause.jpg)
